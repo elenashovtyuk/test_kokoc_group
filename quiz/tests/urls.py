@@ -1,10 +1,10 @@
 from django.urls import path
 from .views import (
-    TestListView, test_view
+    list_tests, test_view
 )
 
 
 urlpatterns = [
-    path('', TestListView.as_view(), name='main-view'),
-    path('<pk>/', test_view, name='test-view')
+    path('', list_tests, name='list-tests'),
+    path('<int:pk>/', test_view, name='test-view')
 ]
