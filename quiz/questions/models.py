@@ -5,7 +5,11 @@ from tests.models import Test
 class Question(models.Model):
     """Модель вопроса квиза."""
     text_of_question = models.CharField(max_length=120)
-    test = models.ForeignKey(Test, on_delete=models.CASCADE)
+    test = models.ForeignKey(
+        Test,
+        on_delete=models.CASCADE,
+        related_name='questions'
+    )
 
     def __str__(self):
         return str(self.text_of_question)
