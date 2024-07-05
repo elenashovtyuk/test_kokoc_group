@@ -3,6 +3,11 @@
   <head>
   </head>
   <body>
-    <h1>Главная страница cо списком тестов(квизов)</h1>
+    <h1>Тесты</h1>
+    <title>Список возможных тестов</title>
+    {% for test in tests %}
+    <li>{{ test.name }}</li><a href="{% url 'list-tests' %}"></a>
+
+{% endfor %}
   </body>
 </html>
