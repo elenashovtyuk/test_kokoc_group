@@ -3,7 +3,8 @@
   <head>
   </head>
   <body>
-    <h1>Страница с вопросами отдельного теста</h1><a href="{% url 'test-view' test.pk %}">{{ test.name }}</a>
+    <title>Страница теста с вопросами</title>
+    <a href="{% url 'test-view' test.pk %}">{{ test.name }}</a>
     {% for question in questions %}
     <li>{{ question.text_of_question }}</li>
 

@@ -6,8 +6,7 @@
     <h1>Тесты</h1>
     <title>Список возможных тестов</title>
     {% for test in tests %}
-    <li>{{ test.name }}</li><a href="{% url 'list-tests' %}"></a>
-
-{% endfor %}
+        <li><a href="{% url 'list-tests' %}">{{ test.name }}</a></li>
+    {% endfor %}
   </body>
 </html>
