@@ -4,6 +4,7 @@ from django.db import models
 # Create your models here.
 class Test(models.Model):
     """Модель теста, квиза."""
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=120)
     count_of_questions = models.IntegerField
 
