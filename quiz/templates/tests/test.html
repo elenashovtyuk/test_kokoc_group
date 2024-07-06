@@ -4,10 +4,19 @@
   </head>
   <body>
     <title>Страница теста с вопросами</title>
-    <a href="{% url 'test-view' test.pk %}">{{ test.name }}</a>
-    {% for question in questions %}
-    <li>{{ question.text_of_question }}</li>
+    <h1>{{ test.name }}</h1>
 
+    {% for question in questions %}
+        <ul>
+            <li>{{ question.text_of_question }}</li>
+
+            {% for answer in question.answers.all %}
+                <ul>
+                    <li>{{ answer.text_of_answer }}</li>
+                </ul>
+            {% endfor %}
+        </ul>
     {% endfor %}
+
   </body>
 </html>
