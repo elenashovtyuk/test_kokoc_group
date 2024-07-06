@@ -1,0 +1,10 @@
+Hi {{ user.username }}!
+<p>You are not logged in</p>
+{% comment %} <a href="{% url 'login' %}">Log In</a> {% endcomment %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <a href="{% url 'users:signup' %}">Sign up</a><br>
+    <a href="{% url 'users:login' %}">Login</a>
+  </form>

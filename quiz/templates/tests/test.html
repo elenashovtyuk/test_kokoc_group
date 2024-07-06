@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <title>Страница теста с вопросами</title>
   </head>
   <body>
-    <title>Страница теста с вопросами</title>
+    <header>
+      {{ user.username }}
+    </header>
     <h1>{{ test.name }}</h1>
 
-    {% for question in questions %}
-        <ul>
-            <li>{{ question.text_of_question }}</li>
+    <form action="{% url 'tests:list-tests' %}" method="post">
+      {% csrf_token %}
+      {% for question in questions %}
+          <ul>
+              <li>{{ question.text_of_question }}</li>
 
-            {% for answer in question.answers.all %}
-                <ul>
-                    <li>{{ answer.text_of_answer }}</li>
-                </ul>
-            {% endfor %}
-        </ul>
-    {% endfor %}
-
+              {% for answer in question.answers.all %}
+                  <ul>
+                      <li>
+                        <input type="radio" name="question-id{{ question.id }}" value="{{ answer.text_of_answer }}">
+                        {{ answer.text_of_answer }}
+                      </li>
+                  </ul>
+              {% endfor %}
+          </ul>
+      {% endfor %}
+      <div>
+        <button type="submit">Submit form</button>
+      </div>
+    </form>
   </body>
 </html>
