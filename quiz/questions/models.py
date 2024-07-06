@@ -4,6 +4,7 @@ from tests.models import Test
 
 class Question(models.Model):
     """Модель вопроса квиза."""
+    id = models.AutoField(primary_key=True)
     text_of_question = models.CharField(max_length=120)
     test = models.ForeignKey(
         Test,
