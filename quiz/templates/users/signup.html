@@ -1,6 +1,19 @@
-<h2>Регистрация</h2>
-<form method="post" action="{% url 'users:signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Зарегистрироваться">
-</form>
+{% extends 'base.html' %}
+
+{% block title %}Register on the website{% endblock %}
+
+{% block content %}
+
+  <h2>Sign up</h2>
+
+  <div class="signup-form">
+    <form method="post" action="{% url 'users:signup' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">
+        Submit form
+      </button>
+    </form>
+  </div>
+
+{% endblock %}

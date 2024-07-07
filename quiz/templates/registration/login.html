@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-{% comment %} <html lang="ru">
-  <head>
-  </head>
-  <body>
-    <h1>Login</h1>
-    <title>Login</title>
+{% extends 'base.html' %}
 
-  </body>
-</html> {% endcomment %}
-<h3>Вход</h3>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-  </form>
-  {% comment %} <p><a href="{% url 'logout/' %}">Выход</a></p> {% endcomment %}
+{% block title %}Log in{% endblock %}
+
+{% block content %}
+
+  <h1>Log in</h1>
+  <div class="login-form">
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Log in</button>
+    </form>
+  </div>
+{% endblock %}

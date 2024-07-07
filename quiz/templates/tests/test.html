@@ -1,33 +1,30 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <title>Страница теста с вопросами</title>
-  </head>
-  <body>
-    <header>
-      {{ user.username }}
-    </header>
-    <h1>{{ test.name }}</h1>
+{% extends 'base.html' %}
 
-    <form action="{% url 'tests:list-tests' %}" method="post">
-      {% csrf_token %}
-      {% for question in questions %}
-          <ul>
-              <li>{{ question.text_of_question }}</li>
+{% block title %}Question: {{ test.name }}{% endblock %}
 
-              {% for answer in question.answers.all %}
-                  <ul>
-                      <li>
-                        <input type="radio" name="question-id{{ question.id }}" value="{{ answer.text_of_answer }}">
-                        {{ answer.text_of_answer }}
-                      </li>
-                  </ul>
-              {% endfor %}
-          </ul>
-      {% endfor %}
-      <div>
-        <button type="submit">Submit form</button>
+{% block content %}
+
+  <h1>{{ test.name }}</h1>
+
+  <form action="{% url 'tests:list-tests' %}" method="post">
+    {% csrf_token %}
+
+    {% for question in questions %}
+      <div class="question-group">
+        <h3 class="question-name">{{ question.text_of_question }}</h3>
+        <ul>
+          {% for answer in question.answers.all %}
+            <li class="answer-item">
+              <label>
+                <input type="radio" name="question-id{{ question.id }}" value="{{ answer.text_of_answer }}">
+                {{ answer.text_of_answer }}
+              <label>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
-    </form>
-  </body>
-</html>
+    {% endfor %}
+    <button type="submit">Submit form</button>
+  </form>
+
+{% endblock %}

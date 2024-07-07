@@ -1,4 +1,12 @@
-<form action="{% url 'logout' %}" method="post">
-  {% csrf_token %}
-  <button type="submit">Log out</button>
-</form>
+{% extends 'base.html' %}
+
+{% block title %}Log out{% endblock %}
+
+{% block content %}
+
+  <form action="{% url 'logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Log out</button>
+  </form>
+
+{% endblock %}

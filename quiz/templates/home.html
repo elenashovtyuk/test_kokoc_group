@@ -1,10 +1,18 @@
-Hi {{ user.username }}!
-<p>You are not logged in</p>
-{% comment %} <a href="{% url 'login' %}">Log In</a> {% endcomment %}
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
+{% extends 'base.html' %}
 
-    <a href="{% url 'users:signup' %}">Sign up</a><br>
-    <a href="{% url 'users:login' %}">Login</a>
-  </form>
+{% block title %}Enter to the website{% endblock %}
+
+{% block content %}
+
+  <h1>Hi {{ user.username }}!</h1>
+  <div class="login-form">
+    <p>To get a list of questions, please log in to the website</p>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <a class="button" href="{% url 'users:signup' %}">Sign up</a>
+      <a class="button" href="{% url 'users:login' %}">Login</a>
+    </form>
+  </div>
+
+{% endblock %}

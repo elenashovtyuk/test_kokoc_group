@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <title>Список возможных тестов</title>
-  </head>
-  <body>
-    <header>
-      {{ user.username }}
-    </header>
-    <h1>Тесты</h1>
+{% extends 'base.html' %}
 
-    {% for test in tests %}
-        <li><a href="{% url 'tests:test-view' test.pk %}">{{ test.name }}</a></li>
-    {% endfor %}
-  </body>
-</html>
+{% block title %}All tests{% endblock %}
+
+{% block content %}
+
+  <h1>Tests list</h1>
+
+  <div class="tests-list">
+
+      {% for test in tests %}
+        <h3 class="test-name">
+          <a href="{% url 'tests:test-view' test.pk %}">{{ test.name }}</a>
+        </h3>
+      {% endfor %}
+
+  </div>
+
+{% endblock %}
