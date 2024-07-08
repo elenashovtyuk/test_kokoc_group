@@ -1,0 +1,853 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-07-04T22:39:46.790Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "About you",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-07-04T22:43:11.560Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "What is your age",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What is your age, answer: less than 18\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What is your age, answer: 18-25\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What is your age, answer: 25-35\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What is your age, answer: 35-45\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What is your age, answer: more than 45\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-07-04T22:43:31.876Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "What is your age",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-07-05T11:13:36.249Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Your education",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-07-05T11:14:25.335Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Your profession",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-07-05T13:47:20.729Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "What is your type of employment?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What is your type of employment?, answer: student\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What is your type of employment?, answer: work\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What is your type of employment?, answer: unemployed\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-07-05T19:01:19.131Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "What is your age",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-07-06T19:45:52.379Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "What kind of education do you have?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What kind of education do you have?, answer: Higher education\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What kind of education do you have?, answer: Further education\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What kind of education do you have?, answer: Secondary education\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: What kind of education do you have?, answer: Unfinished higher education\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-07-06T19:48:13.101Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Year of graduation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Year of graduation, answer: 1995 - 2000\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Year of graduation, answer: 2000 - 2005\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Year of graduation, answer: 2005-2010\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Year of graduation, answer: 2010-2015\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Year of graduation, answer: 2015-2020\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Year of graduation, answer: after 2020\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-07-06T19:52:14.862Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Your type of employment now",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Your type of employment now, answer: Full-time job\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Your type of employment now, answer: Part-time job\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Your type of employment now, answer: Freelancer\"}}, {\"added\": {\"name\": \"answer\", \"object\": \"question: Your type of employment now, answer: I am self-employed\"}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add test",
+    "content_type": 7,
+    "codename": "add_test"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change test",
+    "content_type": 7,
+    "codename": "change_test"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete test",
+    "content_type": 7,
+    "codename": "delete_test"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view test",
+    "content_type": 7,
+    "codename": "view_test"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add question",
+    "content_type": 8,
+    "codename": "add_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change question",
+    "content_type": 8,
+    "codename": "change_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete question",
+    "content_type": 8,
+    "codename": "delete_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view question",
+    "content_type": 8,
+    "codename": "view_question"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add answer",
+    "content_type": 9,
+    "codename": "add_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change answer",
+    "content_type": 9,
+    "codename": "change_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete answer",
+    "content_type": 9,
+    "codename": "delete_answer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view answer",
+    "content_type": 9,
+    "codename": "view_answer"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$Ot9irYY1uolUIJdNOusGYj$p38+7js+Ue5bNB7m5d/FEOCiHZj+ji+OWlD/sdBif40=",
+    "last_login": "2024-07-07T22:41:00.125Z",
+    "is_superuser": true,
+    "username": "admin87",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin87@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-07-04T22:12:06.910Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$swAXO89rI62FzuAM2xH4dt$4WLeGf5IK69EGdQnFo1Gtzw6TsV5DH/K2CTxZpgxy4Q=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "elenashow87",
+    "first_name": "Елена",
+    "last_name": "Шовтюк",
+    "email": "elena@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-07-06T13:20:38.672Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$QyEhGoynoGlG8wxhrPI181$Xu8xivt9VpBLUsxbJw8E/vS+ba7cyzuZRSPejEcTQ+U=",
+    "last_login": "2024-07-06T13:50:52.285Z",
+    "is_superuser": false,
+    "username": "elenashow",
+    "first_name": "Елена",
+    "last_name": "Шовтюк",
+    "email": "elena@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-07-06T13:21:54.557Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$xYfOG1YzVnWidIxCSOWaki$MKaXoJYkZ55H6IeLxpDgY/FqGOJDyMic+6J0uwoNZ/s=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "shovtyuk.elena@yandex.ru",
+    "first_name": "Elena",
+    "last_name": "Shovtyuk",
+    "email": "shovtyuk.elena@yandex.ru",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-07-06T13:24:15.640Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "tests",
+    "model": "test"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "questions",
+    "model": "question"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "questions",
+    "model": "answer"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "06gij2beieo5wb6wugfnqbq0vnflcyhz",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-B1PS5wzW7tqLA8iR4qRC3B0ipYD2zcx7iQTbWtPWy5KmLC5Ci9PvhkCP0naQ79Bus6S5rcuEclfkQbsc51ye18P9O6jQ67dWBMbaITME7wv47DyRckHpUEzQA_sQI3tE1ozWOMME8WwdmaiwMIn3B-OsOCs:1sQa8M:C-6FjGLmRvyqghl51NcXAwj_hbuDygcHYiNl-NWc7Us",
+    "expire_date": "2024-07-21T22:13:26.934Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "x3rz4uiauv9r7to1x5ieo6xxt5ycy2br",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGln-B1PS5wzW7tqLA8iR4qRC3B0ipYD2zcx7iQTbWtPWy5KmLC5Ci9PvhkCP0naQ79Bus6S5rcuEclfkQbsc51ye18P9O6jQ67dWBMbaITME7wv47DyRckHpUEzQA_sQI3tE1ozWOMME8WwdmaiwMIn3B-OsOCs:1sQaZ2:j33d_45WcM3HdA_J03d7TOIXa162KknuKZd0G_SSjv4",
+    "expire_date": "2024-07-21T22:41:00.127Z"
+  }
+},
+{
+  "model": "tests.test",
+  "pk": 1,
+  "fields": {
+    "name": "About you"
+  }
+},
+{
+  "model": "tests.test",
+  "pk": 2,
+  "fields": {
+    "name": "Your education"
+  }
+},
+{
+  "model": "tests.test",
+  "pk": 3,
+  "fields": {
+    "name": "Your profession"
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 1,
+  "fields": {
+    "text_of_question": "What is your age",
+    "test": 1
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 2,
+  "fields": {
+    "text_of_question": "What is your type of employment?",
+    "test": 1
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 3,
+  "fields": {
+    "text_of_question": "What kind of education do you have?",
+    "test": 2
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 4,
+  "fields": {
+    "text_of_question": "Year of graduation",
+    "test": 2
+  }
+},
+{
+  "model": "questions.question",
+  "pk": 5,
+  "fields": {
+    "text_of_question": "Your type of employment now",
+    "test": 3
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 1,
+  "fields": {
+    "text_of_answer": "less than 18",
+    "question": 1
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 2,
+  "fields": {
+    "text_of_answer": "18-25",
+    "question": 1
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 3,
+  "fields": {
+    "text_of_answer": "25-35",
+    "question": 1
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 4,
+  "fields": {
+    "text_of_answer": "35-45",
+    "question": 1
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 5,
+  "fields": {
+    "text_of_answer": "more than 45",
+    "question": 1
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 6,
+  "fields": {
+    "text_of_answer": "student",
+    "question": 2
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 7,
+  "fields": {
+    "text_of_answer": "work",
+    "question": 2
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 8,
+  "fields": {
+    "text_of_answer": "unemployed",
+    "question": 2
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 9,
+  "fields": {
+    "text_of_answer": "Higher education",
+    "question": 3
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 10,
+  "fields": {
+    "text_of_answer": "Further education",
+    "question": 3
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 11,
+  "fields": {
+    "text_of_answer": "Secondary education",
+    "question": 3
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 12,
+  "fields": {
+    "text_of_answer": "Unfinished higher education",
+    "question": 3
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 13,
+  "fields": {
+    "text_of_answer": "1995 - 2000",
+    "question": 4
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 14,
+  "fields": {
+    "text_of_answer": "2000 - 2005",
+    "question": 4
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 15,
+  "fields": {
+    "text_of_answer": "2005-2010",
+    "question": 4
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 16,
+  "fields": {
+    "text_of_answer": "2010-2015",
+    "question": 4
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 17,
+  "fields": {
+    "text_of_answer": "2015-2020",
+    "question": 4
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 18,
+  "fields": {
+    "text_of_answer": "after 2020",
+    "question": 4
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 19,
+  "fields": {
+    "text_of_answer": "Full-time job",
+    "question": 5
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 20,
+  "fields": {
+    "text_of_answer": "Part-time job",
+    "question": 5
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 21,
+  "fields": {
+    "text_of_answer": "Freelancer",
+    "question": 5
+  }
+},
+{
+  "model": "questions.answer",
+  "pk": 22,
+  "fields": {
+    "text_of_answer": "I am self-employed",
+    "question": 5
+  }
+}
+]
