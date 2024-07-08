@@ -15,9 +15,6 @@ class Question(models.Model):
     def __str__(self):
         return str(self.text_of_question)
 
-    # def get_answer(self):
-    #     return self.answer_set.all()
-
 
 class Answer(models.Model):
     """Модель ответа на вопрос."""

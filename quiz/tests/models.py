@@ -1,7 +1,6 @@
 from django.db import models
 
 
-# Create your models here.
 class Test(models.Model):
     """Модель теста, квиза."""
     id = models.AutoField(primary_key=True)
