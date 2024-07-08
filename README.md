@@ -53,6 +53,6 @@ python3 manage.py loaddata db.json
 python3 manage.py runserver
 ```
 
-### Авторы
+### Автор
 
 Шовтюк Елена
